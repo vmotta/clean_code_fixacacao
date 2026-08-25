@@ -11,12 +11,12 @@
   },
   "autoload": {
     "psr-4": {
-      "CleanCodeLab\\\\": "src/"
+      "CleanCodeLab\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "CleanCodeLab\\\\Tests\\\\": "tests/"
+      "CleanCodeLab\\Tests\\": "tests/"
     }
   },
   "scripts": {
