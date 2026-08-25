@@ -38,6 +38,57 @@ composer test
 
 A primeira execução da suíte deve terminar sem falhas. Os testes são sua rede de segurança durante as refatorações.
 
+## Rodando o servidor embutido do PHP com uma pasta específica
+
+Para rodar o servidor embutido do PHP apontando para uma pasta específica, use a opção `-t` (*document root*).
+
+A estrutura básica do comando é:
+
+```bash
+php -S localhost:8000 -t /caminho/para/sua/pasta
+```
+
+- `php -S`: inicia o servidor embutido;
+- `localhost:8000`: define o endereço e a porta onde o servidor vai escutar;
+- `-t /caminho/para/sua/pasta`: define a pasta que será a raiz do servidor.
+
+### Exemplo deste laboratório
+
+Na raiz do projeto, você pode servir a pasta `examples`:
+
+```bash
+php -S localhost:8000 -t examples
+```
+
+Depois acesse no navegador:
+
+```text
+http://localhost:8000/demo.php
+```
+
+### Exemplos com caminho absoluto
+
+**Linux/macOS**:
+
+```bash
+php -S localhost:8080 -t /home/usuario/meu_projeto
+```
+
+**Windows**:
+
+```bash
+php -S localhost:8080 -t C:\Users\SeuUsuario\Documents\meu_projeto
+```
+
+Depois de executar o comando, o servidor usa a pasta indicada como sua raiz. Ao acessar `http://localhost:8080`, ele procura arquivos como `index.php` ou `index.html` dentro dessa pasta.
+
+Dicas importantes:
+
+- prefira caminhos absolutos quando estiver apontando para uma pasta fora do diretório atual;
+- sem `-t`, o PHP usa a pasta atual do terminal como raiz;
+- para encerrar o servidor, pressione `Ctrl + C`;
+- o servidor embutido é adequado para desenvolvimento e testes, **não para produção**.
+
 ## Regra importante
 
 Não tente “limpar tudo” de uma vez. O código inicial possui problemas de propósito para que você possa praticar cada conceito isoladamente.
