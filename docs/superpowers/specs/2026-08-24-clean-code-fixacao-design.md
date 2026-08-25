@@ -4,6 +4,8 @@
 
 Criar uma atividade prática para a turma de TADS que simule uma sprint real de manutenção de software legado. Os estudantes deverão analisar um sistema funcional, identificar dívida técnica, proteger o comportamento com testes, refatorar o código com base em princípios de Clean Code e colaborar usando Git, GitHub, Issues, branches, Pull Requests e Code Review.
 
+A atividade será apresentada como um **desafio prático de desenvolvimento**, sem atribuição de pontos ou nota. O foco será a experiência profissional, a qualidade técnica das decisões e a capacidade de justificar as refatorações realizadas.
+
 ## Base conceitual do material da disciplina
 
 A atividade será alinhada ao e-book de Clean Code fornecido pelo professor, especialmente aos tópicos sobre:
@@ -110,7 +112,7 @@ Os estudantes deverão:
 
 A meta pedagógica não será perseguir 100% de cobertura, mas usar testes como rede de segurança para refatoração.
 
-## Fluxo de trabalho obrigatório
+## Fluxo de trabalho do desafio
 
 Cada equipe deverá seguir o fluxo:
 
@@ -168,51 +170,51 @@ Comentários vagos, como “está ruim” ou “melhore”, não serão suficien
 
 O objetivo é desenvolver comunicação técnica e capacidade de argumentação, não apenas correção de código.
 
-## Desafios obrigatórios
+## Missões do desafio
 
-### Desafio 1 — Diagnóstico de dívida técnica
+### Missão 1 — Diagnóstico de dívida técnica
 
 A equipe deverá localizar e classificar problemas do sistema antes da refatoração.
 
-### Desafio 2 — Nomes significativos
+### Missão 2 — Nomes significativos
 
 Renomear elementos ambíguos sem alterar comportamento.
 
-### Desafio 3 — Funções pequenas e coesas
+### Missão 3 — Funções pequenas e coesas
 
 Reduzir métodos extensos e separar níveis de abstração.
 
-### Desafio 4 — DRY
+### Missão 4 — DRY
 
 Eliminar pelo menos uma duplicação real de regra de negócio.
 
-### Desafio 5 — KISS
+### Missão 5 — KISS
 
 Simplificar pelo menos uma implementação excessivamente complexa.
 
-### Desafio 6 — YAGNI
+### Missão 6 — YAGNI
 
 Remover pelo menos um elemento comprovadamente desnecessário, preservando o histórico no Git.
 
-### Desafio 7 — Separation of Concerns
+### Missão 7 — Separation of Concerns
 
 Separar pelo menos uma responsabilidade da classe central de vendas.
 
-### Desafio 8 — Tratamento de erros
+### Missão 8 — Tratamento de erros
 
 Substituir tratamento genérico por uma solução mais clara e contextualizada.
 
-### Desafio 9 — Object Calisthenics
+### Missão 9 — Object Calisthenics
 
 Aplicar e justificar pelo menos duas regras, priorizando redução de indentação, eliminação de `else` quando fizer sentido, encapsulamento e entidades pequenas.
 
-### Desafio 10 — Code Review
+### Missão 10 — Code Review
 
 Revisar tecnicamente o trabalho de outra equipe e responder aos comentários recebidos.
 
 ## Entregáveis dos estudantes
 
-Cada equipe deverá entregar:
+Cada equipe deverá produzir:
 
 1. repositório/fork ou branch de trabalho conforme orientação do professor;
 2. Issues relacionadas às melhorias;
@@ -225,23 +227,36 @@ Cada equipe deverá entregar:
 9. README atualizado com decisões da equipe;
 10. apresentação técnica curta.
 
-## Rubrica de avaliação — 100 pontos
+## Critérios para considerar o desafio concluído
 
-| Critério | Pontos |
-|---|---:|
-| Identificação e priorização de dívida técnica | 15 |
-| Aplicação fundamentada de princípios de Clean Code | 20 |
-| Qualidade da refatoração e preservação do comportamento | 20 |
-| Testes automatizados | 15 |
-| Git, branches e qualidade dos commits | 10 |
-| Pull Request e documentação técnica | 10 |
-| Code Review realizado em outra equipe | 5 |
-| Apresentação técnica | 5 |
-| **Total** | **100** |
+Não haverá pontuação. O desafio será considerado tecnicamente concluído quando a equipe demonstrar que:
+
+- identificou problemas reais de dívida técnica no sistema;
+- aplicou princípios de Clean Code com justificativa, e não apenas por estética;
+- preservou o comportamento funcional após a refatoração;
+- criou ou ampliou testes que protejam os trechos modificados;
+- utilizou Git com branches e commits compreensíveis;
+- abriu um Pull Request documentando as decisões tomadas;
+- participou de um Code Review técnico;
+- respondeu aos comentários recebidos de forma argumentada;
+- apresentou exemplos claros de código antes e depois da refatoração;
+- manteve o projeto compilando e com a suíte de testes passando.
+
+## Reconhecimentos opcionais do desafio
+
+Sem efeito de nota, o professor poderá destacar trabalhos que se sobressaírem em categorias como:
+
+- **Melhor Resgate de Código Legado** — refatoração com maior ganho de clareza e manutenibilidade;
+- **Melhor Code Review** — comentários mais úteis, técnicos e bem fundamentados;
+- **Melhor Uso de Testes como Rede de Segurança** — equipe que melhor caracterizou o comportamento antes de alterar o código;
+- **Melhor Aplicação de Clean Code** — decisões mais bem justificadas com os princípios estudados;
+- **Melhor Evolução Antes × Depois** — comparação mais clara entre o código inicial e o resultado final.
+
+Esses reconhecimentos servem apenas para tornar a dinâmica mais interessante e aproximá-la de um desafio técnico, sem criar pontuação acadêmica.
 
 ## Apresentação final
 
-Cada equipe deverá apresentar em 5 a 7 minutos:
+Cada equipe poderá apresentar em 5 a 7 minutos:
 
 1. pior problema encontrado;
 2. dívida técnica eliminada;
@@ -267,7 +282,7 @@ clean_code_fixacacao/
 │   ├── atividade-alunos.md
 │   ├── guia-git.md
 │   ├── guia-code-review.md
-│   ├── rubrica.md
+│   ├── criterios-desafio.md
 │   ├── divida-tecnica-modelo.md
 │   ├── antes-e-depois-modelo.md
 │   └── professor/
@@ -292,11 +307,11 @@ O projeto estará pronto quando:
 
 - o sistema legado compilar com Java 21 e Maven;
 - a suíte inicial passar;
-- houver defeitos de Clean Code intencionais suficientes para os desafios;
+- houver defeitos de Clean Code intencionais suficientes para as missões;
 - os estudantes conseguirem refatorar em incrementos pequenos;
 - o CI executar testes automaticamente;
 - os templates de Issue e PR orientarem o fluxo profissional;
 - a atividade possuir documentação clara para alunos;
 - o professor possuir um guia de aplicação e mapa de problemas;
-- a rubrica estiver objetiva e alinhada aos entregáveis;
+- os critérios de conclusão do desafio estiverem objetivos e alinhados aos entregáveis;
 - não houver solução final exposta na branch principal antes da aplicação.
