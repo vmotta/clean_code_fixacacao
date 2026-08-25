@@ -1,0 +1,28 @@
+{
+  "name": "vmotta/clean-code-fixacao",
+  "description": "Laboratório guiado de Clean Code e refatoração em PHP",
+  "type": "project",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "CleanCodeLab\\\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "CleanCodeLab\\\\Tests\\\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit --testdox"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
